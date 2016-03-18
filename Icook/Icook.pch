@@ -1,0 +1,15 @@
+//
+//  Icook.pch
+//  Icook
+//
+//  Created by Macx on 16/1/31.
+//  Copyright © 2016年 zly. All rights reserved.
+//
+
+#ifndef Icook_pch
+#define Icook_pch
+
+#import "Common.h"
+#import <UIKit/UIKit.h>
+#import "AFNetworking.h"
+#endif /* Icook_pch */

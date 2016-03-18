@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15A284" minimumToolsVersion="Xcode 7.0">
+    <entity name="Material" representedClassName="Material" syncable="YES">
+        <attribute name="height" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="materialName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Means" representedClassName="Means" syncable="YES">
+        <attribute name="means" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Menu" representedClassName="Menu" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="suggest" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="synopsis" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="menu_material" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Material" syncable="YES"/>
+        <relationship name="menu_means" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Means" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Menu" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="Means" positionX="-54" positionY="18" width="128" height="75"/>
+        <element name="Material" positionX="-36" positionY="36" width="128" height="75"/>
+    </elements>
+</model>
